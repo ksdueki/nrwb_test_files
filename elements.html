@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../../../css/style.css" />
+    <title>FORM要素まとめ</title>
+</head>
+<body>
+    <div class="cont">
+        <h1>
+            FORM要素まとめ</h1>
+        <h3>
+            Text</h3>
+        ■BRタグを使ってレイアウトを調整しているパターン
+        <form method="get" action="#">
+        <input name="text" value="size=50固定" size="50"><br>
+        <input name="text" value="size=100固定" size="100"><br>
+        <input name="text" value="size=150固定" size="150"><br>
+        <input name="text" value="size=200固定" size="200"><br>
+        </form>
+        ■BRタグを使用していないパターン
+        <form method="get" action="#">
+        <input name="text" value="size=50固定" size="50">
+        <input name="text" value="size=50固定" size="50">
+        <input name="text" value="size=50固定" size="50">
+        <input name="text" value="size=50固定" size="50">
+        </form>
+        <h3>
+            Radio</h3>
+        ■レイアウトは連続しているが、name属性の同じグループ内でのみ動作する。
+        <form method="get" action="#">
+        <input name="sample1" value="test" checked="checked" type="radio">その1
+        <input name="sample1" value="test" type="radio">その1
+        <input name="sample1" value="test" type="radio">その1
+        <input name="sample1" value="test" type="radio">その1
+        <input name="sample1" value="test" type="radio">その1
+        <input name="sample2" value="test" checked="checked" type="radio">その2
+        <input name="sample2" value="test" type="radio">その2
+        <input name="sample2" value="test" type="radio">その2
+        <input name="sample2" value="test" type="radio">その2
+        <input name="sample2" value="test" type="radio">その2
+        <input name="sample3" value="test" checked="checked" type="radio">その3
+        <input name="sample3" value="test" type="radio">その3
+        <input name="sample3" value="test" type="radio">その3
+        <input name="sample3" value="test" type="radio">その3
+        <input name="sample3" value="test" type="radio">その3
+        </form>
+        ■実際に使用される際はグループ別にレイアウトされる事が多い
+        <form method="get" action="#">
+        <fieldset>
+            <legend>その1グループ</legend>
+            <input name="sample1" value="test" checked="checked" type="radio">その1
+            <input name="sample1" value="test" type="radio">その1
+            <input name="sample1" value="test" type="radio">その1
+            <input name="sample1" value="test" type="radio">その1
+            <input name="sample1" value="test" type="radio">その1
+        </fieldset>
+        <fieldset>
+            <legend>その2グループ</legend>
+            <input name="sample2" value="test" checked="checked" type="radio">その2
+            <input name="sample2" value="test" type="radio">その2
+            <input name="sample2" value="test" type="radio">その2
+            <input name="sample2" value="test" type="radio">その2
+            <input name="sample2" value="test" type="radio">その2
+        </fieldset>
+        <fieldset>
+            <legend>その3グループ</legend>
+            <input name="sample3" value="test" checked="checked" type="radio">その3
+            <input name="sample3" value="test" type="radio">その3
+            <input name="sample3" value="test" type="radio">その3
+            <input name="sample3" value="test" type="radio">その3
+            <input name="sample3" value="test" type="radio">その3
+        </fieldset>
+        </form>
+        ■
+        <form method="get" action="#">
+        <input name="sample1" value="test" checked="checked" type="radio">
+        テキストが長い場合はどうなるかのテスト テキストが長い場合はどうなるかのテスト テキストが長い場合はどうなるかのテスト テキストが長い場合はどうなるかのテスト
+        </form>
+        <h3>
+            Check</h3>
+        ■ラジオボタンのようにname属性は指定できるが、複数選択が可能なため、グループが分からない。
+        <form method="get" action="#">
+        <input name="sample1" value="test" checked="checked" type="checkbox">その1
+        <input name="sample1" value="test" type="checkbox">その1
+        <input name="sample1" value="test" type="checkbox">その1
+        <input name="sample1" value="test" type="checkbox">その1
+        <input name="sample1" value="test" type="checkbox">その1
+        <input name="sample2" value="test" checked="checked" type="checkbox">その2
+        <input name="sample2" value="test" type="checkbox">その2
+        <input name="sample2" value="test" type="checkbox">その2
+        <input name="sample2" value="test" type="checkbox">その2
+        <input name="sample2" value="test" type="checkbox">その2
+        <input name="sample3" value="test" checked="checked" type="checkbox">その3
+        <input name="sample3" value="test" type="checkbox">その3
+        <input name="sample3" value="test" type="checkbox">その3
+        <input name="sample3" value="test" type="checkbox">その3
+        <input name="sample3" value="test" type="checkbox">その3
+        </form>
+        ■実際に使用される際はグループ別にレイアウトされる事が多い
+        <form method="get" action="#">
+        <fieldset>
+            <legend>その1グループ</legend>
+            <input name="sample1" value="test" checked="checked" type="checkbox">その1
+            <input name="sample1" value="test" type="checkbox">その1
+            <input name="sample1" value="test" type="checkbox">その1
+            <input name="sample1" value="test" type="checkbox">その1
+            <input name="sample1" value="test" type="checkbox">その1
+        </fieldset>
+        <fieldset>
+            <legend>その2グループ</legend>
+            <input name="sample2" value="test" checked="checked" type="checkbox">その2
+            <input name="sample2" value="test" type="checkbox">その2
+            <input name="sample2" value="test" type="checkbox">その2
+            <input name="sample2" value="test" type="checkbox">その2
+            <input name="sample2" value="test" type="checkbox">その2
+        </fieldset>
+        <fieldset>
+            <legend>その3グループ</legend>
+            <input name="sample3" value="test" checked="checked" type="checkbox">その3
+            <input name="sample3" value="test" type="checkbox">その3
+            <input name="sample3" value="test" type="checkbox">その3
+            <input name="sample3" value="test" type="checkbox">その3
+            <input name="sample3" value="test" type="checkbox">その3
+        </fieldset>
+        </form>
+        <h3>
+            File</h3>
+        ■file属性を指定すると、エディットとボタンのセットが表示される。
+        <form method="get" action="#">
+        <input name="sample1" type="file" />
+        </form>
+        ■ファイルのアップロードなどに使用される。
+        <form method="get" action="#">
+        アップロードするファイルを選択してください。<br />
+        <input name="sample1" type="file" /><br />
+        <input name="sample1" type="file" /><br />
+        <input name="sample1" type="file" /><br />
+        <input name="sample1" type="file" /><br />
+        </form>
+        <h3>
+            Button</h3>
+        ■input type= で指定する submit,reset属性はフォーム既定のボタンが作られ、button属性はカスタマイズボタンを作成できる。
+        <form method="get" action="#">
+        <input value="送信する=submit" type="submit" name="smp1" />
+        <input value="リセット=reset" type="reset" name="smp2" />
+        <input value="カスタム=button" type="button" name="smp3" />
+        </form>
+        ■button タグで作られるボタンは、サイズ、テキストの色を自由にカスタマイズできる。
+        <form method="get" action="#">
+        <button type="submit">
+            送信する
+        </button>
+        <br />
+        <button type="reset">
+            <i>リセット</i></button><br />
+        <button type="button">
+            ボタン
+        </button>
+        <br />
+        <button type="reset">
+            サイズ、テキストの色を<br />
+            自由にカスタマイズできる。
+        </button>
+        <br />
+        <button type="reset">
+            こ<br />
+            ん<br />
+            な<br />
+            の<br />
+            も<br />
+            で<br />
+            き<br />
+            る
+        </button>
+        <br />
+        </form>
+        <h3>
+            Label</h3>
+        ■ラベルタグの働き
+        <form method="get" action="#" target="rightfrm">
+        下のラジオボタンはテキストをクリックしても何も起きない
+        <p>
+            質問：<input type="radio" name="q" value="はい" />
+            はい
+            <input type="radio" name="q" value="いいえ" />
+            いいえ
+            <input type="radio" name="q" value="どちらでもない" />どちらでもない
+        </p>
+        下のラジオボタンはテキストをクリックすると、ラジオボタンが決定される
+        <p>
+            質問：<input type="radio" name="q" value="はい" id="q1" />
+            <label for="q1">
+                はい</label>
+            <input type="radio" name="q" value="いいえ" id="q2" />
+            <label for="q2">
+                いいえ</label>
+            <input type="radio" name="q" value="どちらでもない" id="q3" />
+            <label for="q3">
+                どちらでもない</label>
+        </p>
+        <p>
+            <input type="button" name="q" value="ラベル付き" id="b1" /><label for="b1">決定...できる！</label>
+            <input type="button" name="q" value="ラベルなし" />決定...できない；
+        </p>
+        </form>
+    </div>
+</body>
+</html>

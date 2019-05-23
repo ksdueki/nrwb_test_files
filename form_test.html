@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>フォームテストページ</title>
+</head>
+<body>
+    <form method="get" action="#">
+    <table border="1">
+        <tr>
+            <td>
+                テキスト入力欄
+            </td>
+            <td>
+                <input name="sample1" value="テキスト入力欄" type="text">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                テキスト入力欄
+            </td>
+            <td>
+                <input name="sample2" value="passsample" type="password">
+                （パスワード形式）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                複数行の入力欄
+            </td>
+            <td>
+                <textarea cols="10" rows="5" name="sample3">複数行の
+テキスト入力欄
+</textarea>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ラジオボタン
+            </td>
+            <td>
+                <input name="sample4" value="test" checked="checked" type="radio">その1
+                <input name="sample4" value="test" type="radio">その2
+                <input name="sample4" value="test" type="radio">その3 （1つだけ選択が可能）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                チェックボックス
+            </td>
+            <td>
+                <input name="sample5" value="test" checked="checked" type="checkbox">その1
+                <input name="sample5" value="test" type="checkbox">その2
+                <input name="sample5" value="test" type="checkbox">その3 （複数選択が可能）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                セレクトボックス
+            </td>
+            <td>
+                <select name="sample6">
+                    <option value="test">セレクトAその1</option>
+                    <option value="test">セレクトAその2</option>
+                    <option value="test">セレクトAその3</option>
+                    <option value="test">セレクトAその4</option>
+                    <option value="test">セレクトAその5</option>
+                </select>
+                （プルダウン形式）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                セレクトボックス
+            </td>
+            <td>
+                <select name="sample7" size="5">
+                    <option value="test">セレクトBその1</option>
+                    <option value="test">セレクトBその2</option>
+                    <option value="test">セレクトBその3</option>
+                    <option value="test">セレクトBその4</option>
+                    <option value="test">セレクトBその5</option>
+                </select>
+                （リスト形式）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                セレクトボックス
+            </td>
+            <td>
+                <select name="sample7" size="5" multiple>
+                    <option value="test">セレクトBその1</option>
+                    <option value="test">セレクトBその2</option>
+                    <option value="test">セレクトBその3</option>
+                    <option value="test">セレクトBその4</option>
+                    <option value="test">セレクトBその5</option>
+                </select>
+                （リスト形式 複数選択）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ファイル選択
+            </td>
+            <td>
+                <input name="sample8" type="file">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                隠しデータ
+            </td>
+            <td>
+                <input name="sample9" value="test" type="hidden">（画面上には表示されません）
+            </td>
+        </tr>
+        <tr>
+            <td>
+                ボタン
+            </td>
+            <td>
+                <input value="送信する" type="submit">
+                <input value="リセット" type="reset">
+            </td>
+        </tr>
+    </table>
+    </form>
+    <form method="get" action="">
+    テキスト入力欄
+    <input name="sample1" value="テキスト入力欄" type="text">
+    テキスト入力欄
+    <input name="sample2" value="passsample" type="password">
+    （パスワード形式） 複数行の入力欄
+    <textarea cols="10" rows="5" name="sample3">複数行の
+テキスト入力欄
+</textarea>
+    ラジオボタン
+    <input name="sample4" value="test" checked="checked" type="radio">その1
+    <input name="sample4" value="test" type="radio">その2
+    <input name="sample4" value="test" type="radio">その3 （1つだけ選択が可能） チェックボックス
+    <input name="sample5" value="test" checked="checked" type="checkbox">その1
+    <input name="sample5" value="test" type="checkbox">その2
+    <input name="sample5" value="test" type="checkbox">その3 （複数選択が可能） セレクトボックス
+    <select name="sample6">
+        <option value="test">セレクトAその1</option>
+        <option value="test">セレクトAその2</option>
+        <option value="test">セレクトAその3</option>
+        <option value="test">セレクトAその4</option>
+        <option value="test">セレクトAその5</option>
+    </select>
+    （プルダウン形式） セレクトボックス
+    <select name="sample7" size="5">
+        <option value="test">セレクトBその1</option>
+        <option value="test">セレクトBその2</option>
+        <option value="test">セレクトBその3</option>
+        <option value="test">セレクトBその4</option>
+        <option value="test">セレクトBその5</option>
+    </select>
+    （リスト形式） ファイル選択
+    <input name="sample8" type="file">
+    隠しデータ
+    <input name="sample9" value="test" type="hidden">（画面上には表示されません） ボタン
+    <input value="送信する" type="submit">
+    <input value="リセット" type="reset">
+    </form>
+</body>
+</html>
