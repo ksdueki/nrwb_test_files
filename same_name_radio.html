@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ラジオボタンのトグルテスト</title>
+</head>
+
+<body>
+    <h1>
+        フォームは分かれているのでトグルしない</h1>
+    <div><a href="./index.html">もどる</a></div>
+
+    <h3>
+        Radio</h3>
+    <code>form.form1, radio.sample1</code>
+    <form method="get" name="form1" action="#">
+        <input name="sample1" value="test" checked="checked" type="radio">その1
+        <input name="sample1" value="test" type="radio">Form1の1
+        <input name="sample1" value="test" type="radio">Form1の2
+        <input name="sample1" value="test" type="radio">Form1の3
+        <input name="sample1" value="test" type="radio">Form1の4
+    </form>
+
+    <code>form.form2, radio.sample1</code>
+    <form method="get" name="form2" action="#">
+        <input name="sample1" value="test" checked="checked" type="radio">その1
+        <input name="sample1" value="test" type="radio">Form2の1
+        <input name="sample1" value="test" type="radio">Form2の2
+        <input name="sample1" value="test" type="radio">Form2の3
+        <input name="sample1" value="test" type="radio">Form2の4
+    </form>
+
+    <h3>
+        １つのフォームに同じnameのラジオボタンがあるのでトグルする</h3>
+    <code>form.form3, radio.sample1</code>
+    <form method="get" name="form3" action="#">
+        <input name="sample1" value="test" checked="checked" type="radio">その1
+        <input name="sample1" value="test" type="radio">Form1の1
+        <input name="sample1" value="test" type="radio">Form1の2
+        <input name="sample1" value="test" type="radio">Form1の3
+        <input name="sample1" value="test" type="radio">Form1の4
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <div>サンプルテキスト</div>
+        <input name="sample1" value="test" checked="checked" type="radio">その1
+        <input name="sample1" value="test" type="radio">Form2の1
+        <input name="sample1" value="test" type="radio">Form2の2
+        <input name="sample1" value="test" type="radio">Form2の3
+        <input name="sample1" value="test" type="radio">Form2の4
+    </form>
+
+
+    <div><a href="./index.html">もどる</a></div>
+</body>
+
+</html>
