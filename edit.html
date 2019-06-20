@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>エディットの種類</title>
+</head>
+
+<body>
+
+    <div><a href="./index.html">もどる</a></div>
+
+    <form method="get" action="">
+        <div>
+            <code>type="text"</code>:<input name="sample1" value="あいう#$%&abc" type="text">
+        </div>
+        <div>
+            <code>type="password"</code>:<input name="sample2" value="passsample" type="password">
+        </div>
+        <div>
+            <code>type="email"</code>:<input name="email" value="test@example.com" type="email">
+        </div>
+        <div>
+            <code>type="tel"</code>:<input name="tel" value="03" type="tel">
+        </div>
+
+        <div>
+            <code>type="number"</code>:<input name="number" value="0" type="number">
+        </div>
+
+        <div>
+            <code>type="url"</code>:<input name="url" value="https://" type="url">
+        </div>
+
+        <div>
+            <code>type="search"</code>:<input type="search" autocomplete="on" list="list">
+
+            <!-- 候補を表示 -->
+            <datalist id="list">
+                  <option value="aaa">
+                  <option value="abb">
+                  <option value="acc">
+                  <option value="add">
+                </datalist>
+
+            <input type="submit" value="検索">
+        </div>
+        <div>
+            <code>textarea</code>:
+            <textarea cols="10" rows="5" name="sample3">
+        </textarea>
+        </div>
+</body>
+
+</html>
