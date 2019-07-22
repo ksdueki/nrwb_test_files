@@ -1,0 +1,61 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>sample</title>
+</head>
+
+<body>
+    <div>
+        <h1>テスト</h1>
+        <p>プルダウンメニュー</p>
+        <select name="example">
+<option value="選択肢1">選択肢1</option>
+<option value="選択肢2">選択肢2</option>
+<option value="選択肢3">選択肢3</option>
+</select>
+        <br>
+        <p>size属性指定</p>
+        <select name="example2" size="5">
+<option value="">5つの選択肢を表示</option>
+<option value="選択肢2">選択肢2</option>
+<option value="選択肢3">選択肢3</option>
+<option value="選択肢4">選択肢4</option>
+<option value="選択肢5">選択肢5</option>
+<option value="選択肢6">選択肢6</option>
+<option value="選択肢7">選択肢7</option>
+</select>
+        <br>
+        <p>multiple属性指定</p>
+        <select name="example3" size="5" multiple>
+<option value="選択肢1">選択肢1</option>
+<option value="選択肢2" selected>選択肢2</option>
+<option value="選択肢3">選択肢3</option>
+<option value="選択肢4" selected>選択肢4</option>
+<option value="選択肢5">選択肢5</option>
+</select>
+        <br>
+        <p>disabled属性指定</p>
+        <select name="example" disabled>
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+</select>
+        <br>
+        <p>required属性指定</p>
+        <form method="get" action="select.html">
+            <select name="example" required>
+<option value="">選択してください</option>
+<option value="選択肢1">選択肢のサンプル1</option>
+<option value="選択肢2">選択肢のサンプル2</option>
+<option value="選択肢3">選択肢のサンプル3</option>
+<option value="選択肢4">選択肢のサンプル4</option>
+<option value="選択肢5">選択肢のサンプル5</option>
+</select>
+            <strong>必須</strong>
+            <p><input type="submit" value="送信する"></p>
+        </form>
+</body>
+
+</html>
