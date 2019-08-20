@@ -6,14 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Yahoo クイックビューのテキスト不具合</title>
+    <style>
+        a {
+            background-image: url(./images/sample_48.png);
+            background-repeat: no-repeat;
+        }
+        
+        #mhicon #mhi1st a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "トラベル";
+        }
+        
+        #mhicon #mhi2nd a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "ヤフオク";
+        }
+        
+        #mhicon #mhi3rd a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "ショッピング";
+        }
+        
+        #mhicon #mhi4th a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "プレミアム";
+        }
+        
+        #mhicon #mhi5th a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "カード";
+        }
+        
+        #mhicon #mhi6th a:after {
+            padding-left: 14px\9;
+            text-indent: 0;
+            content: "メール";
+        }
+        
+        #mhicon li a {
+            overflow: hidden;
+            text-indent: -9999px;
+            position: relative;
+            display: block;
+            width: 50px;
+            height: 60px;
+            margin-top: 11px;
+        }
+        
+        #mhicon li a:after {
+            position: absolute;
+            top: 46px;
+            bottom: 0;
+            display: block;
+            width: 100%;
+            font-size: 10px;
+            text-indent: 0;
+        }
+    </style>
 </head>
 
 <body>
     <div id="header">
         <div id="masthead">
-            <h1>
-                <a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAMBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly93d3cueWFob28uY28uanAvAA--/RK=0/RS=Tr3HgVrrz3OAbBvsUIVcrPzzpek-"><img src="https://s.yimg.jp/images/top/sp2/cmn/logo-170307.png" alt="Yahoo! JAPAN" height="55" width="213"></a>
-            </h1>
             <ul id="mhicon">
                 <li id="mhi1st"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAMRWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly90cmF2ZWwueWFob28uY28uanAvP3NjX2U9eXRtaAA-/RK=0/RS=iacnkeUPTRoXS0IQD0LHUe2cEgY-">トラベル</a></li>
                 <li id="mhi2nd"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAMhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9hdWN0aW9ucy55YWhvby5jby5qcC8A/RK=0/RS=ADieRiAiWejnJQwSHywzN9Ibvns-">ヤフオク!</a></li>
@@ -22,123 +81,6 @@
                 <li id="mhi5th"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoANRWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9jYXJkLnlhaG9vLmNvLmpwL3NlcnZpY2UvcmVkaXJlY3QvdG9wLwA-/RK=0/RS=tdFzSlPcGh0uImI8eqfKR3h82.4-">カード</a></li>
                 <li id="mhi6th"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoANhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9tYWlsLnlhaG9vLmNvLmpwLwA-/RK=0/RS=VNYmIqX8gX.LoP0sqmpyhzXdwpo-">メール</a></li>
             </ul>
-            <ul id="changeMode">
-                <li id="changeModeBB"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoANxWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9iYi55YWhvby5jby5qcC8A/RK=0/RS=egG.sommUzztnA03B7HxLBGbots-">Yahoo! BB</a></li>
-                <li id="changeModeKids"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAOBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9raWRzLnlhaG9vLmNvLmpwLwA-/RK=0/RS=EP78uB9BrRdUZmEaltwJ3pjcGR4-">きっず版</a></li>
-                <li id="changeModeApp"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAORWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9wcm9tby1tb2JpbGUueWFob28uY28uanAveWphcHAvAA--/RK=0/RS=A2ODQVc.ul.3_4ARclJ0B9.asIg-">アプリ版</a></li>
-            </ul>
-        </div>
-        <div id="emg">
-            <!-- SpaceID=2077296265 loc=EMG3 noad-spid -->
-            <!-- SpaceID=2077296265 loc=EMG2 noad-spid -->
-            <!-- SpaceID=2077296265 loc=EMG noad-spid -->
-        </div>
-        <div id="searchbox" class="bdA3 bgA6">
-            <form action="https://search.yahoo.co.jp/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" name="sf1" method="get" onsubmit="return YAHOO.Fp.OnSearchSubmit()">
-                <fieldset id="srchfield">
-                    <legend>Yahoo!検索</legend>
-                    <div id="srchbd">
-                        <ul class="tab">
-                            <li class="tab0 first on"><span> <a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAOxWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZWFyY2gueWFob28uY28uanAvAA--/RK=0/RS=htuTi4OlqgtC4xQaLMwhFUZcQ_c-" data-search="https://search.yahoo.co.jp/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="search" hidefocus="true">ウェブ</a></span></li>
-                            <li class="tab1"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAPBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZWFyY2gueWFob28uY28uanAvaW1hZ2UA/RK=0/RS=eawm_wonv52uEOdyAMYxbmZdILU-" data-search="https://search.yahoo.co.jp/image/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="isearch" hidefocus="true">画像</a></span></li>
-                            <li class="tab2"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAPRWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZWFyY2gueWFob28uY28uanAvdmlkZW8A/RK=0/RS=zUA7yT_lDnW93i0xlq63VTlcdC8-" data-search="https://search.yahoo.co.jp/video/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="msearch" hidefocus="true">動画</a></span></li>
-                            <li class="tab3"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAPhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9jaGllYnVrdXJvLnlhaG9vLmNvLmpwLwA-/RK=0/RS=hA2KQynLsXd9Ix9nduhS8ncq2qI-" data-search="https://chiebukuro.yahoo.co.jp/search/;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="ksearch" hidefocus="true">知恵袋</a></span></li>
-                            <li class="tab4"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAPxWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9tYXAueWFob28uY28uanAvAA--/RK=0/RS=HzEL2NZhiKZb49A1VU9QgxqJx0Q-" data-search="https://map.yahoo.co.jp/mapsearch/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="csearch" hidefocus="true">地図</a></span></li>
-                            <li class="tab5"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAQBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZWFyY2gueWFob28uY28uanAvcmVhbHRpbWUA/RK=0/RS=vVmiJAFfOLmjbXEtR3YhaaXbQqc-" data-search="https://search.yahoo.co.jp/realtime/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="rtsearch" hidefocus="true">リアルタイム</a></span></li>
-                            <li class="tab6"><span><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAQRWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9qb2IueWFob28uY28uanAvAA--/RK=0/RS=phq0nlMlE7FApBRz..ucl5wjqCo-" data-search="https://job.yahoo.co.jp/jobs/;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="jsearch" hidefocus="true">求人</a></span></li>
-                            <li class="tab7" id="srchMore"><span><a class="pldwn" hidefocus="true" id="srchMorebtn" href="https://services.yahoo.co.jp/?mode=pc">一覧</a></span>
-                                <div class="floatingw" id="srchMorefw">
-                                    <ul>
-                                        <li class="first"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAQhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zaG9wcGluZy55YWhvby5jby5qcC8A/RK=0/RS=d7M5M4Ji95a5IdbgHulns77QHZk-"
-                                                data-search="https://shopping.yahoo.co.jp/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="shsearch" hidefocus="true">ショッピング</a></li>
-                                        <li><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAQxWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9hdWN0aW9ucy55YWhvby5jby5qcC9qcC8A/RK=0/RS=y_7APqDEbqN2LNEzxtTYfin73kA-"
-                                                data-search="https://auctions.yahoo.co.jp/search/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="ausearch" hidefocus="true">ヤフオク!</a></li>
-                                        <li><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoARBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZWFyY2gueWFob28uY28uanAvIyEvcmVjaXBlAA--/RK=0/RS=4dfknBXmj8FgakoqAH2JZXurEcA-"
-                                                data-search="https://search.yahoo.co.jp/recipe/search;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="rsearch" hidefocus="true">レシピ</a></li>
-                                        <li><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoARRWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9sb2NvLnlhaG9vLmNvLmpwLwA-/RK=0/RS=Ii_if8x2yUSqHH8tx0MjsW0cSIA-"
-                                                data-search="https://loco.yahoo.co.jp/search/;_ylt=A2Ri8cfMfVtdhDoAOhWJBtF7" id="lsearch" hidefocus="true">お店、施設</a></li>
-                                        <li class="last"><a hidefocus="true" id="service" href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoARhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly9zZXJ2aWNlcy55YWhvby5jby5qcC8_bW9kZT1wYwA-/RK=0/RS=r2U3f3HQut_P8SqaIgO4kTxUuqs-">サービス一覧</a></li>
-                                    </ul>
-                                </div>
-                            </li>
-                        </ul>
-                        <p><label id="srchtxtBg"><input name="p" id="srchtxt" type="text" value="" autocomplete="off">
-    </label><input type="submit" id="srchbtn" class="srchbtn" value="検索"></p>
-                        <div id="srchAssist">
-                            <div id="srchAssistBd" style="display:none;">
-                                <p id="srchAssistTxt">キーワードが入力されていません。</p>
-                                <dl id="srchAssistOnOff"><dt>キーワード入力補助</dt>
-                                    <dd class="first">ON</dd>
-                                    <dd><a href="/?_m=SearchBox&amp;_a=setSuggest&amp;fr=&amp;copt2=1&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">OFF</a></dd>
-                                </dl>
-                            </div>
-                            <div id="srchAssistClose" title="キーワード入力補助を開く">
-                                <div id="srchacb"><a href="#">キーワード入力補助を開く</a></div>
-                            </div>
-                        </div>
-                    </div>
-                    <script type="text/javascript">
-                        <!--
-                        YUE.addListener(document, "keydown", YAHOO.Fp.KeyAction);
-                        YUE.addListener('srchtxt', "keydown", function(e) {
-                            if (e.keyCode == 38 || e.keyCode == 40) YAHOO.Fp.SearchAssist(e);
-                        });
-                        setInterval(function(e) {
-                            YAHOO.Fp.CheckSearchBoxTextPeriodically();
-                            if (YAHOO.Fp._srchOldQ != $('srchtxt').value) {
-                                YAHOO.Fp._srchOldQ = $('srchtxt').value;
-                                YAHOO.Fp.SearchAssist(e);
-                            }
-                        }, 100);
-                        YUE.addListener('srchAssistClose', "click", function(e) {
-                            YUE.stopEvent(e);
-                            YAHOO.Fp.fToggleSearchAssist(e);
-                        });
-                        $('srchtxt').setAttribute("autocomplete", "off");
-                        $('srchtxt').focus({
-                            preventScroll: true
-                        });
-                        //-->
-                    </script>
-                    <input name="search.x" id="search.x" value="1" type="hidden" disabled="disabled"><input name="fr" id="fr" value="top_ga1_sa" type="hidden"><input name="ei" id="ei" value="UTF-8" type="hidden"><input name="aq" id="aq" value="-1" type="hidden">
-                    <input
-                        name="oq" id="oq" value="" type="hidden"><input name="at" id="at" value="" type="hidden"><input name="aa" id="aa" value="" type="hidden"><input name="ai" id="ai" value="" type="hidden"><input name="ts" id="ts" value="" type="hidden">
-
-                </fieldset>
-            </form>
-        </div>
-        <noscript>
-    <div class="noscriptAlert">
-    <p class="noscriptAlert__text">JavaScriptが無効になっています。すべての機能を利用するためには、有効に設定してください。<br>詳しくは「<a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoARxWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly93d3cueWFob28taGVscC5qcC9hcHAvbm9zY3JpcHQA/RK=0/RS=2a.RibCyP.QUsxSzj2p4KlfeuXE-">JavaScriptの設定方法</a>」をご覧ください。</p>
-    <img width=1 height=1 alt="" src="https://rdsig.yahoo.co.jp/toppage/pc/noscript/RV=1/RU=aHR0cHM6Ly9zLnlpbWcuanAvaW1hZ2VzL2NsZWFyLmdpZg--" class="noscriptAlert__logImage">
-    </div>
-    </noscript>
-        <div id="hdBar">
-            <div id="uhd" class="bdB3">
-                <div id="uhdsetstart"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAKhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly93d3cueWFob28uY28uanAvcHJvbW90aW9uL3N0YXJ0cGFnZS8A/RK=0/RS=8DSbILVPcm8f2c8gPjhWuyHEx68-"
-                        title="ホームページに設定する"><span>[ホームページ設定]</span>ホームページに設定する</a></div>
-                <script type="text/javascript">
-                    <!--
-                    YAHOO.Fp.hm = document.getElementById('uhdsetstart');
-                    //-->
-                </script>
-                <script type="text/javascript">
-                    <!--
-                    YAHOO.Fp.hm.innerHTML = '<a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoAKhWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly93d3cueWFob28uY28uanAvcHJvbW90aW9uL3N0YXJ0cGFnZS8A/RK=0/RS=8DSbILVPcm8f2c8gPjhWuyHEx68-" title="ホームページに設定する"><span>[ホームページ設定]</span>ホームページに設定する</a>';
-                    //-->
-                </script>
-                <div id="uhdassist">
-                    <ul id="clr">
-                        <li id="clr1"><a class="on" href="/;_ylt=A2Ri8cfMfVtdhDoAKxWJBtF7?_m=ColorPicker&amp;fr=&amp;_a=setColor&amp;color=1&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">ブルー</a></li>
-                        <li id="clr2"><a href="/;_ylt=A2Ri8cfMfVtdhDoALBWJBtF7?_m=ColorPicker&amp;fr=&amp;_a=setColor&amp;color=2&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">ピンク</a></li>
-                        <li id="clr3"><a href="/;_ylt=A2Ri8cfMfVtdhDoALRWJBtF7?_m=ColorPicker&amp;fr=&amp;_a=setColor&amp;color=3&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">オレンジ</a></li>
-                        <li id="clr4"><a href="/;_ylt=A2Ri8cfMfVtdhDoALhWJBtF7?_m=ColorPicker&amp;fr=&amp;_a=setColor&amp;color=4&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">グリーン</a></li>
-                        <li id="clr5"><a href="/;_ylt=A2Ri8cfMfVtdhDoALxWJBtF7?_m=ColorPicker&amp;fr=&amp;_a=setColor&amp;color=5&amp;nc=dD1NMzNXZEImc2s9amFJSGJsRlg1QVZPOFVGRDF1UXZFMFFKeVJ3LQ==">シルバー</a></li>
-                    </ul>
-                    <p class="help"><a href="https://rdsig.yahoo.co.jp/_ylt=A2Ri8cfMfVtdhDoASBWJBtF7/RV=2/RE=1566363468/RH=cmRzaWcueWFob28uY28uanA-/RB=DL8_lXHdER45e9qI7xtk.5yCgJA-/RU=aHR0cHM6Ly93d3cueWFob28taGVscC5qcC8A/RK=0/RS=s0eQ5A7HqrIulR2duTGqhz8rlfU-">ヘルプ</a></p>
-                </div>
-                <div class="iemw"></div>
-            </div>
         </div>
         <!-- /#hdBar -->
     </div>
