@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>audio and video</title>
+</head>
+
+<body>
+
+    <h1>audio</h1>
+    <audio style="max-width: 100%" controls="controls">このブラウザでは再生できません。
+    <source src="./assets/sample.mp3">
+  </audio>
+
+    <div>
+        <button onclick="javascript:document.getElementsByTagName('audio')[0].play();">play</button>
+    </div>
+    <div>
+        <button onclick="javascript:document.getElementsByTagName('audio')[0].pause();">pause</button>
+    </div>
+    <div>
+        <button onclick="javascript:var audio=document.getElementsByTagName('audio')[0];audio.paused ? audio.play() : audio.pause();">toggle</button>
+    </div>
+
+    <h1>video</h1>
+</body>
+
+</html>
