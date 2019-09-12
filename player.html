@@ -6,14 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>audio and video</title>
+    <script type="text/javascript">
+        function getAudio() {
+            return document.getElementsByTagName('audio')[0];
+        }
+
+        function forward() {
+            var audio = getAudio();
+            audio.currentTime += 5;
+        }
+
+        function back() {
+            var audio = getAudio();
+            audio.currentTime -= 5;
+        }
+
+        function home() {
+            var audio = getAudio();
+            console.log(audio.currentTime);
+            audio.currentTime = 0;
+            audio.play();
+        }
+    </script>
 </head>
 
 <body>
+    <div><a href="./index.html">もどる</a></div>
 
     <h1>audio</h1>
     <audio style="max-width: 100%" controls="controls">このブラウザでは再生できません。
-    <source src="./assets/sample.mp3">
-  </audio>
+        <source src="./assets/sample.mp3">
+    </audio>
 
     <div>
         <button onclick="javascript:document.getElementsByTagName('audio')[0].play();">play</button>
@@ -25,7 +48,20 @@
         <button onclick="javascript:var audio=document.getElementsByTagName('audio')[0];audio.paused ? audio.play() : audio.pause();">toggle</button>
     </div>
 
+    <div>
+        <button onclick="javascript:var audio=document.getElementsByTagName('audio')[0];audio.volume=audio.volume>=1? 1 : (audio.volume*10+1)/10;console.log(audio.volume);">＋</button>
+        <button onclick="javascript:var audio=document.getElementsByTagName('audio')[0];audio.volume=audio.volume<0.1? 0 : (audio.volume*10-1)/10;console.log(audio.volume);">ー</button>
+    </div>
+
+    <div>
+        <button onclick="forward();">Forward</button>
+        <button onclick="back();">Back</button>
+        <button onclick="home();">Home</button>
+    </div>
+
     <h1>video</h1>
+    <div><a href="./index.html">もどる</a></div>
+
 </body>
 
 </html>
